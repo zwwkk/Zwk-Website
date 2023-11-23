@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from vdevstudio.fr/discordbot.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Nov 2023 19:23:47 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>VDEV-SHOP</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="index-2.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="discordbot.html">Nos Bots Discord</a></li>
+            <li class="dropdown">
+                <a href="#">Nos Tools</a>
+                <ul class="dropdown-content">
+                    <li><a href="job.html">Générateur de Jobs</a></li>
+                    <li><a href="#">Véhicules</a></li>
+                    <li><a href="#">Personnages</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <img src="../cdn.discordapp.com/attachments/1175436536792240139/1175816941076742184/space-modified_1.png" alt="Logo" class="logo">
+            <h1 class="main-title">VDEV-SHOP</h1>
+            <p>Bienvenue sur Notre Site !</p>
+        </div>
+    </header>
+
+    <main id="addons-container">
+        
+    </main>
+
+    <section id="discord-section">
+        <h2>Ajouter notre bot Discord sur le serveur :</h2>
+        <p>Rejoignez notre serveur Discord pour profiter de fonctionnalités exclusives :</p>
+        <button id="add-bot-button">Ajouter le bot Discord</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 VDEV-SHOP. Tous droits réservés. Copyright by 𝐗 𝐀 𝐕 𝐄 𝐍 💜</p>
+    </footer>
+
+    <script>
+        const addonsData = [
+            
+        ];
+
+        const addonsContainer = document.getElementById('addons-container');
+
+        
+        addonsData.forEach(addon => {
+            const addonCard = document.createElement('div');
+            addonCard.className = 'addon-card';
+
+            addonCard.innerHTML = `
+                <img src="${addon.image}" alt="${addon.name}">
+                <div class="addon-info">
+                    <h2>${addon.name}</h2>
+                    <p>${addon.description}</p>
+                    <a href="${addon.downloadLink}" class="download-button">Télécharger</a>
+                </div>
+            `;
+
+            addonsContainer.appendChild(addonCard);
+        });
+
+       
+        const addBotButton = document.getElementById('add-bot-button');
+        addBotButton.addEventListener('click', () => {
+     
+            alert("Fonctionnalité en cours de développement. Veuillez Réssayez plus tard.");
+        });
+    </script>
+</body>
+
+
+
+<!-- Mirrored from vdevstudio.fr/discordbot.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Nov 2023 19:23:47 GMT -->
+</html>
