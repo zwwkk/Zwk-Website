@@ -1,0 +1,453 @@
+
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    background: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: #fff;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    padding: 40px;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #8B008B;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.discord-section {
+    background: #2a2a2a;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.discord-section img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.discord-section h2 {
+    color: #fff;
+}
+
+.discord-section p {
+    color: #fff;
+}
+
+.discord-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B008B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.discord-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.discord-button:hover {
+    background-color: #6a006a;
+}
+
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    flex: 0 0 45%;
+    margin: 20px 0;
+    border: 1px solid #8B008B;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #2a2a2a;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px #8B008B;
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #8B008B;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+.project-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #8B008B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #6a006a;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start; 
+    margin: 20px;
+}
+
+.addon-card {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #8B008B;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    background: #2a2a2a;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.addon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px #8B008B; 
+}
+
+.addon-card img {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: cover;
+}
+
+.addon-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.addon-info h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #8B008B;
+}
+
+.addon-info p {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #8B008B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #6a006a;
+}
+
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px; 
+}
+
+
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+#jobForm {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 2px solid #8B008B;
+}
+
+button {
+    background-color: #8B008B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a006a;
+}
+
+#generatedCode {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    white-space: pre-wrap;
+    color: #fff;
+}
+
+#copyButton {
+    margin-top: 10px;
+    background-color: #8B008B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: #6a006a;
+}
+
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
